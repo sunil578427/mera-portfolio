@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मेरा पोर्टफोलियो | स्टूडेंट</title>
+    <style>
+        /* Basic Styling */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; scroll-behavior: smooth; color: #333; }
+        nav { background: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 90%; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #007bff; }
+        nav a { text-decoration: none; color: #333; margin-left: 20px; font-weight: 500; }
+
+        /* Hero Section */
+        .hero { height: 100vh; background: linear-gradient(135deg, #007bff, #00d4ff); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; padding: 0 20px; }
+        .hero img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; margin-bottom: 20px; object-fit: cover; }
+        .hero h1 { font-size: 3rem; margin: 0; }
+        .hero p { font-size: 1.2rem; margin: 10px 0 25px; opacity: 0.9; }
+        .btn { background: white; color: #007bff; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #f0f0f0; transform: scale(1.05); }
+
+        /* Sections */
+        section { padding: 80px 10% 40px; }
+        h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #007bff; }
+
+        /* Project Cards */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+        .card h3 { margin-top: 0; }
+
+        /* Skills */
+        .skills-container { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .skill-badge { background: #eef2f7; padding: 10px 20px; border-radius: 20px; font-weight: bold; color: #555; }
+
+        /* Footer */
+        footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MyPortfolio</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <img src="editing (2).jpg" alt="मेरी फोटो"> 
+        <h1>नमस्ते, मैं एक Student हूँ</h1>
+        <p>मैं वेब डेवलपमेंट सीख रहा हूँ और मुझे कोड करना पसंद है।</p>
+        <a href="#contact" class="btn">मुझसे बात करें</a>
+    </section>
+
+    <section id="projects">
+        <h2>मेरे प्रोजेक्ट्स</h2>
+        <div class="project-grid">
+            <div class="card">
+                <img src="Screenshot6.jpg" alt="my project" style="width:100%; border-radius:10px; margin-bottom:15px;">
+                <h3>प्रोजेक्ट 1</h3>
+                <p>यह एक शानदार वेब एप्लीकेशन है जिसे मैंने HTML/CSS से बनाया है।</p>
+                <a href="project25-1.html" target="_blank" class="btn">प्रोजेक्ट देखें</a>
+            </div>
+            <div class="card">
+                <img src="Screensho5.jpg" alt="my project" style="width:100%; border-radius:10px; margin-bottom:15px;">
+                <h3>प्रोजेक्ट 2</h3>
+                <p>JavaScript का उपयोग करके बनाया गया एक कैलकुलेटर प्रोजेक्ट।</p>
+                <a href="project26.html" target="_blank" class="btn">प्रोजेक्ट देखें</a>
+            </div>
+            <div class="card">
+                <h3>प्रोजेक्ट 3</h3>
+                <p>एक पर्सनल ब्लॉग वेबसाइट जो पूरी तरह से रिस्पॉन्सिव है।</p>
+            </div>
+            <div class="card">
+                <h3>प्रोजेक्ट 4</h3>
+                <p>आने वाला बेहतरीन प्रोजेक्ट... जल्द ही!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>मेरी स्किल्स</h2>
+        <div class="skills-container">
+            <div class="skill-badge">HTML5</div>
+            <div class="skill-badge">CSS3</div>
+            <div class="skill-badge">JavaScript</div>
+            <div class="skill-badge">React (Learning)</div>
+            <div class="skill-badge">Git & GitHub</div>
+        </div>
+    </section>
+
+    <section id="contact" style="text-align: center;">
+        <h2>संपर्क करें</h2>
+        <p>ईमेल: sunil578427@gmail.com</p>
+        <p>GitHub: github.com/yourusername</p>
+    </section>
+
+    <footer>
+        © 2026 | आपके द्वारा बनाया गया ❤️
+    </footer>
+
+</body>
+</html>
